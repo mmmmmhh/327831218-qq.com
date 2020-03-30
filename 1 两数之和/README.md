@@ -7,3 +7,5 @@
 给定 nums = [2, 7, 11, 15], target = 9<br>
 因为 nums[0] + nums[1] = 2 + 7 = 9<br>
 所以返回 [0, 1]
+
+[代码](https://github.com/mmmmmhh/LeetCode-Python-/blob/master/1%20%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/code)
