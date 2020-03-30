@@ -2,10 +2,11 @@
 # 方法一：基本方法，嵌套for循环。
 class Solution:
     def twoSum(self, nums, target):
-        for i in range(len(nums)):
-            for j in range(i+1, len(nums)):
+        n = len(nums)
+        for i in range(n):
+            for j in range(i+1, n):
                 if target == nums[i] + nums[j]:
-                    return i,j
+                    return i, j
                     
 # 方法二：只用一次for循环，判断target-nums[i]是否在列表中，在 则用list.index()获取索引，注意判断返回的两个数下标不能相同。
 class Solution:
@@ -25,6 +26,5 @@ class Solution:
             a = target - nums[i]
             if a in dict:
                 return dict[a], i
-            else:
-                dict[nums[i]] = i
+            dict[nums[i]] = i
         
